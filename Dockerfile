@@ -15,4 +15,4 @@ RUN conda install --yes --file requirements.txt
 COPY . /webapp
 
 ENTRYPOINT ["/usr/local/bin/dumb-init"]
-CMD [ "python", "app.py" ]
+CMD [ "python", "./project/app.py" ]

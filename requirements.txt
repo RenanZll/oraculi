@@ -1,5 +1,5 @@
 # requirements.txt
 # with pinned versions of immediate dependencies
 flask==1.0.2
-sqlalchemy==1.2.11
 requests==2.19.1
+pytest

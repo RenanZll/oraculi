@@ -1,15 +1,18 @@
-FROM python:3
+FROM continuumio/miniconda3
 
 MAINTAINER Renan Zelli "renan.zelli@gmail.com"
 
-COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt /webapp/requirements.txt
 
-WORKDIR /app
+# Add dumb-init
+ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2.1_amd64 /usr/local/bin/dumb-init
+RUN chmod a+x /usr/local/bin/dumb-init
 
-RUN pip install -r requirements.txt
+WORKDIR /webapp
 
-COPY . /app
+RUN conda install --yes --file requirements.txt
 
-ENTRYPOINT [ "python" ]
+COPY . /webapp
 
-CMD [ "app.py" ]
+ENTRYPOINT ["/usr/local/bin/dumb-init"]
+CMD [ "python", "app.py" ]

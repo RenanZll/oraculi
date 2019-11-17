@@ -12,5 +12,8 @@ WORKDIR /webapp
 
 RUN conda install --yes --file requirements.txt
 
+ENV FLASK_APP=oraculi.py
+ENV FLASK_ENV=development
+
 ENTRYPOINT ["/usr/local/bin/dumb-init"]
-CMD [ "python", "./oraculi.py" ]
+CMD [ "flask", "run" ]

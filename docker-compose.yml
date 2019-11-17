@@ -5,6 +5,6 @@ services:
     build: .
     container_name: oraculi
     volumes:
-      - .:/app
+      - .:/webapp
     ports:
       - '5000:5000'

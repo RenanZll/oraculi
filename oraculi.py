@@ -1,13 +1,14 @@
 from flask import Flask
-app = Flask(__name__)
+
+def create_app():
+    flask_app = Flask(__name__)
+    return flask_app
+
+app = create_app()
 
 @app.route('/')
 def index():
     return 'Server Works!'
-
-@app.route('/jacquelona')
-def jac():
-    return 'Jacquelona no Navegadô!'
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

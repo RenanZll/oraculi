@@ -1,0 +1,14 @@
+language: python
+
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker-compose build
+
+script:
+  - docker-compose run web pytest
+
+after_success:
+  - sh .travis/deploy_dockerhub.sh

@@ -2,7 +2,7 @@
 
 if [ "$TRAVIS_BRANCH" = "master" ]; then
   echo "Docker login -->"
-  docker login --username $DOCKER_NAME --password $DOCKER_PASS
+  docker login --username $DOCKER_USER --password $DOCKER_PASS
   echo "Docker build -->"
   docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:lastest .
   echo "Docker tag -->"

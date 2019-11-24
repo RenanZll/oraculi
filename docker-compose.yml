@@ -1,11 +1,13 @@
-version: '3'
+version: '3.4'
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      target: oraculi_development
     container_name: oraculi
     volumes:
-      - .:/webapp
+      - .:/home/webapp
     ports:
       - '5000:5000'
-    image: oraculi
+    image: oraculi_development

@@ -8,7 +8,7 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
   find . -name "__pycache__" | sudo xargs rm -rf && echo "Files deleted!"
 
   echo "Docker build -->"
-  docker build -f Dockerfile -t oraculi:lastest -t oraculi:v$TRAVIS_COMMIT .
+  docker build -f Dockerfile -t oraculi:latest -t oraculi:v$TRAVIS_COMMIT .
 
   echo "Docker images command -->"
   docker images

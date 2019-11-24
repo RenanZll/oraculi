@@ -1,21 +1,17 @@
 #!/bin/bash
 
 if [ "$TRAVIS_BRANCH" = "master" ]; then
-  echo "Docker login -->"
-  docker login --username $DOCKER_USER --password $DOCKER_PASS
+  echo "\nDocker login -->"
+  docker login --username $DOCKER_USER --password $DOCKER_PASS &&
 
-  echo "Delete __pycache__ files created by Docker -->"
-  find . -name "__pycache__" | sudo xargs rm -rf && echo "Files deleted!"
+  echo "\nDelete __pycache__ files created by Docker -->"
+  find . -name "__pycache__" | sudo xargs rm -rf && \
+    echo "Files deleted!"
 
-  echo "Docker build -->"
-  docker build -f Dockerfile -t oraculi:latest -t oraculi:v$TRAVIS_COMMIT .
+  echo "\nDocker build and tag -->"
+  docker build -f Dockerfile -t oraculi:latest -t oraculi:v$TRAVIS_COMMIT . && \
+    docker tag  oraculi $DOCKER_REPO
 
-  echo "Docker images command -->"
-  docker images
-
-  echo "Docker tag -->"
-  docker tag  oraculi $DOCKER_REPO
-
-  echo "Docker push -->"
-  docker push $DOCKER_REPO
+  echo "\nDocker push -->"
+  docker push $DOCKER_REPO && echo "\nImage deployed in Docker Hub! :)"
 fi

@@ -9,7 +9,7 @@ app = create_app()
 
 @app.route('/')
 def index():
-    return 'Server Works!'
+    return 'Server Works!!'
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

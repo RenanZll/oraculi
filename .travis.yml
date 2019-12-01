@@ -12,3 +12,4 @@ script:
 
 after_success:
   - bash .travis/deploy_dockerhub.sh
+  - bash .travis/deploy_heroku.sh

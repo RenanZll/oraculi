@@ -14,8 +14,6 @@ WORKDIR ./webapp
 
 RUN conda install --yes --file requirements.txt
 
-EXPOSE 5000
-
 ENTRYPOINT ["/usr/local/bin/dumb-init"]
 CMD [ "python", "oraculi.py" ]
 

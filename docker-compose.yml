@@ -5,9 +5,10 @@ services:
     build:
       context: .
       target: oraculi_development
+    environment:
+       - PORT=5000
     container_name: oraculi
     volumes:
       - .:/home/webapp
     ports:
       - '5000:5000'
-    image: oraculi_development

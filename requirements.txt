@@ -3,3 +3,7 @@
 flask==1.0.2
 requests==2.20.0
 pytest
+joblib
+pandas
+numpy==1.17.2
+scikit-learn==0.21.3

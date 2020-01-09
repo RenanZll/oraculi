@@ -1,0 +1,26 @@
+                                                  precision    recall  f1-score   support
+
+                           AGRAVO DE INSTRUMENTO       0.98      0.99      0.98       581
+                                        APELAÇÃO       0.99      0.99      0.99      1639
+                  APELAÇÃO / REEXAME NECESSÁRIO        0.97      0.96      0.97       154
+                              AÇÃO CIVIL PÚBLICA       1.00      1.00      1.00         1
+                                 AÇÃO RESCISÓRIA       0.97      0.97      0.97        34
+                          CARTA PRECATÓRIA CÍVEL       1.00      0.71      0.83         7
+                         CONFLITO DE COMPETÊNCIA       1.00      0.79      0.88        14
+                         CUMPRIMENTO DE SENTENÇA       0.99      1.00      0.99        86
+CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA       0.99      0.99      0.99       769
+              CUMPRIMENTO PROVISÓRIO DE SENTENÇA       1.00      0.77      0.87        13
+                            EMBARGOS DE TERCEIRO       0.00      0.00      0.00         1
+                             EMBARGOS À EXECUÇÃO       0.67      0.67      0.67         9
+                      EMBARGOS À EXECUÇÃO FISCAL       0.92      0.82      0.87        28
+                                 EXECUÇÃO FISCAL       0.99      1.00      1.00       175
+                            MANDADO DE SEGURANÇA       0.90      0.99      0.95        96
+                              PROCEDIMENTO COMUM       0.00      0.00      0.00         2
+                          PROCEDIMENTO ORDINÁRIO       0.98      0.99      0.98      1036
+                                      RECLAMAÇÃO       1.00      1.00      1.00         1
+                              REEXAME NECESSÁRIO       1.00      0.88      0.94        43
+                   TUTELA ANTECIPADA ANTECEDENTE       0.00      0.00      0.00         1
+
+                                        accuracy                           0.98      4690
+                                       macro avg       0.82      0.78      0.79      4690
+                                    weighted avg       0.98      0.98      0.98      4690

@@ -1,10 +1,13 @@
 import joblib
+from os import path
+
+current_dir = path.dirname(path.abspath(__file__))
 
 class Prediction:
-    PIPELINE_FILE='pipeline.pkl'
+    PIPELINE_FILE=f'{current_dir}/pipeline.pkl'
 
     def __init__(self):
-        self.__pipeline = joblib.load(PIPELINE_FILE)
+        self.__pipeline = joblib.load(self.PIPELINE_FILE)
 
-    def defe(self, document):
-        self.__pipeline.predict(document)
+    def to(self, document):
+        return self.__pipeline.predict(document)

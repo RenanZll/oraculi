@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 import os
 
 def create_app():
@@ -10,6 +10,11 @@ app = create_app()
 @app.route('/')
 def index():
     return 'Server Works!!'
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    document = request.json['document']
+    return = Prediction().to(document)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

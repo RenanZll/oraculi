@@ -11,8 +11,18 @@ def test_model_integrity():
     text_file = open(f'{current_dir}/accuracy-report.txt', "r")
     persisted_accuracy_report = text_file.read()
     text_file.close()
-    y_pred = Prediction().to(persisted_X_test)
+    y_pred = Prediction().validate(persisted_X_test)
     print(len(y_pred))
     print(len(persisted_X_test))
     accuracy_report = classification_report(persisted_y_test, y_pred)
     assert(accuracy_report == persisted_accuracy_report)
+
+
+def test_prediction_(mocker):
+    pipeline= mocker.Mock()
+    conf = {'predict.return_value': ['class1']}
+    pipeline.configure_mock(**conf)
+
+    subject = Prediction(pipeline=pipeline)
+
+    assert subject.to('document1') == 'class1'

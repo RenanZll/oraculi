@@ -1,9 +1,13 @@
 # requirements.txt
 # with pinned versions of immediate dependencies
+#Flask dependencies
 flask==1.0.2
 requests==2.20.0
-pytest
+#Model dependencies
 joblib
 pandas
 numpy==1.17.2
 scikit-learn==0.21.3
+#Test dependencies
+pytest
+pytest-mock

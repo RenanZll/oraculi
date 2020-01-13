@@ -13,8 +13,8 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    document = request.json['document']
-    return = Prediction().to(document)
+    document = request.json()['document']
+    return Prediction().to(document)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

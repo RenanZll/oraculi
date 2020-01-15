@@ -26,7 +26,7 @@ def test_prediction_return_class(mocker):
 
     assert subject.to('document1') == 'class1'
 
-def test_prediction_receive_document_in_a_list(mocker):
+def test_prediction_receive_document_inside_a_list(mocker):
     pipeline = mocker.Mock()
     pipeline.predict.return_value = ['class1']
 

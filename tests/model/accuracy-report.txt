@@ -1,26 +1,24 @@
                                                   precision    recall  f1-score   support
 
-                           AGRAVO DE INSTRUMENTO       0.98      0.99      0.98       581
-                                        APELAÇÃO       0.99      0.99      0.99      1639
-                  APELAÇÃO / REEXAME NECESSÁRIO        0.97      0.96      0.97       154
-                              AÇÃO CIVIL PÚBLICA       1.00      1.00      1.00         1
-                                 AÇÃO RESCISÓRIA       0.97      0.97      0.97        34
-                          CARTA PRECATÓRIA CÍVEL       1.00      0.71      0.83         7
-                         CONFLITO DE COMPETÊNCIA       1.00      0.79      0.88        14
-                         CUMPRIMENTO DE SENTENÇA       0.99      1.00      0.99        86
-CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA       0.99      0.99      0.99       769
-              CUMPRIMENTO PROVISÓRIO DE SENTENÇA       1.00      0.77      0.87        13
-                            EMBARGOS DE TERCEIRO       0.00      0.00      0.00         1
-                             EMBARGOS À EXECUÇÃO       0.67      0.67      0.67         9
-                      EMBARGOS À EXECUÇÃO FISCAL       0.92      0.82      0.87        28
-                                 EXECUÇÃO FISCAL       0.99      1.00      1.00       175
-                            MANDADO DE SEGURANÇA       0.90      0.99      0.95        96
+                           AGRAVO DE INSTRUMENTO       0.96      0.99      0.97       631
+                                        APELAÇÃO       0.99      0.98      0.99      1641
+                  APELAÇÃO / REEXAME NECESSÁRIO        0.99      0.99      0.99       163
+                              AÇÃO CIVIL PÚBLICA       0.00      0.00      0.00         1
+                                 AÇÃO RESCISÓRIA       1.00      0.86      0.93        37
+                          CARTA PRECATÓRIA CÍVEL       0.00      0.00      0.00         6
+                         CONFLITO DE COMPETÊNCIA       1.00      0.83      0.91        18
+                         CUMPRIMENTO DE SENTENÇA       0.96      0.96      0.96        89
+CUMPRIMENTO DE SENTENÇA CONTRA A FAZENDA PÚBLICA       0.99      0.99      0.99       740
+              CUMPRIMENTO PROVISÓRIO DE SENTENÇA       1.00      0.07      0.13        14
+                             EMBARGOS À EXECUÇÃO       0.00      0.00      0.00         6
+                      EMBARGOS À EXECUÇÃO FISCAL       0.81      0.78      0.79        27
+                                 EXECUÇÃO FISCAL       0.97      0.99      0.98       184
+                            MANDADO DE SEGURANÇA       0.81      0.95      0.88        87
+   OUTROS PROCEDIMENTOS DE JURISDIÇÃO VOLUNTÁRIA       0.00      0.00      0.00         1
                               PROCEDIMENTO COMUM       0.00      0.00      0.00         2
-                          PROCEDIMENTO ORDINÁRIO       0.98      0.99      0.98      1036
-                                      RECLAMAÇÃO       1.00      1.00      1.00         1
-                              REEXAME NECESSÁRIO       1.00      0.88      0.94        43
-                   TUTELA ANTECIPADA ANTECEDENTE       0.00      0.00      0.00         1
+                          PROCEDIMENTO ORDINÁRIO       0.97      0.99      0.98       989
+                              REEXAME NECESSÁRIO       1.00      0.78      0.88        54
 
-                                        accuracy                           0.98      4690
-                                       macro avg       0.82      0.78      0.79      4690
-                                    weighted avg       0.98      0.98      0.98      4690
+                                        accuracy                           0.97      4690
+                                       macro avg       0.69      0.62      0.63      4690
+                                    weighted avg       0.97      0.97      0.97      4690

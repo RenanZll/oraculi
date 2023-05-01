@@ -1,7 +1,7 @@
 # requirements.txt
 # with pinned versions of immediate dependencies
 #Flask dependencies
-flask==1.0.2
+flask==2.3.2
 requests==2.20.0
 #Model dependencies
 joblib

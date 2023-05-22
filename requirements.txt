@@ -2,7 +2,7 @@
 # with pinned versions of immediate dependencies
 #Flask dependencies
 flask==1.0.2
-requests==2.20.0
+requests==2.31.0
 #Model dependencies
 joblib
 pandas
